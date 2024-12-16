@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="..\Properties\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <EmbeddedResource Include="../../jupyter-kernel/**" />
+    <Compile Include="..\Config.fs" />
+    <Compile Include="..\DirectivePreprocessor.fs" />
+    <Compile Include="..\NuGetManager.fs" />
+    <Compile Include="..\IfSharpResources.fs" />
+    <Compile Include="..\FsCompiler.fs" />
+    <None Include="..\Include.fsx" />
+    <Compile Include="..\Util.fs" />
+    <Compile Include="..\MainTypes.fs" />
+    <Compile Include="..\ShellMessages.fs" />
+    <Compile Include="..\Evaluation.fs" />
+    <Compile Include="..\Printers.fs" />
+    <Compile Include="..\Kernel.fs" />
+    <Compile Include="..\AssemblyInfo.fs" />
+    <Compile Include="..\App.fs" />
+    <Compile Include="..\Globals.fs" />
+  </ItemGroup>
+  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
+</Project>

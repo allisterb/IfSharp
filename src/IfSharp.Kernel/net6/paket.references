@@ -1,0 +1,8 @@
+group NET6
+
+FSharp.Compiler.Service
+NetMQ
+Newtonsoft.Json
+Paket.Core
+FSharp.Core
+System.Memory
